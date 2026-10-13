@@ -1,0 +1,30 @@
+name: Bug report
+description: Report a reproducible defect
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and logs
+      description: Remove tokens, personal data, and secrets before sharing.
+    validations:
+      required: false
